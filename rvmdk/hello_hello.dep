@@ -1,0 +1,39 @@
+Dependencies for Project 'hello', Target 'hello': (DO NOT MODIFY !)
+F (.\hello.c)(0x54C152F0)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-1.1 --c99-I "\\vmware-host\Shared Folders\Downloads\hello 2\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="513" -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1-o .\rvmdk\hello.o --omf_browse .\rvmdk\hello.crf --depend .\rvmdk\hello.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5476D400)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5476D400)
+I (C:\ti\TivaWare_C_Series-1.1\inc\hw_memmap.h)(0x54ACE75F)
+I (C:\ti\TivaWare_C_Series-1.1\inc\hw_types.h)(0x54ACE75F)
+I (C:\ti\TivaWare_C_Series-1.1\inc\hw_gpio.h)(0x54ACE75F)
+I (C:\ti\TivaWare_C_Series-1.1\inc\hw_ints.h)(0x54ACE75F)
+I (C:\ti\TivaWare_C_Series-1.1\inc\hw_nvic.h)(0x54ACE75F)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\debug.h)(0x54ACE738)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\fpu.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\gpio.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\pin_map.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\rom.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\sysctl.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\interrupt.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\uart.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\utils\uartstdio.h)(0x54ACE78F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5476D3FA)
+I (C:\ti\TivaWare_C_Series-1.1\inc\tm4c123gh6pm.h)(0x54ACE75F)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\timer.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\systick.h)(0x54ACE739)
+F (.\startup_rvmdk.S)(0x54C043D2)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "\\vmware-host\Shared Folders\Downloads\hello 2\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 513" --pd "TM4C123GH6PM SETA 1"-o .\rvmdk\startup_rvmdk.o --depend .\rvmdk\startup_rvmdk.d)
+F (C:\ti\TivaWare_C_Series-1.1\utils\uartstdio.c)(0x54ACE78F)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -IC:\ti\TivaWare_C_Series-1.1 --c99-I "\\vmware-host\Shared Folders\Downloads\hello 2\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="513" -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1-o .\rvmdk\uartstdio.o --omf_browse .\rvmdk\uartstdio.crf --depend .\rvmdk\uartstdio.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5476D400)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5476D400)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5476D3FA)
+I (C:\ti\TivaWare_C_Series-1.1\inc\hw_ints.h)(0x54ACE75F)
+I (C:\ti\TivaWare_C_Series-1.1\inc\hw_memmap.h)(0x54ACE75F)
+I (C:\ti\TivaWare_C_Series-1.1\inc\hw_types.h)(0x54ACE75F)
+I (C:\ti\TivaWare_C_Series-1.1\inc\hw_uart.h)(0x54ACE75F)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\debug.h)(0x54ACE738)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\interrupt.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\rom.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\rom_map.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\sysctl.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\driverlib\uart.h)(0x54ACE739)
+I (C:\ti\TivaWare_C_Series-1.1\utils\uartstdio.h)(0x54ACE78F)
+F (C:\ti\TivaWare_C_Series-1.1\driverlib\rvmdk\driverlib.lib)(0x54ACE73A)()
