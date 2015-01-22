@@ -147,40 +147,48 @@ int main(void)
 					UARTprintf("remote val=%d\n",remoteVal);
 					switch(remoteVal){
 						case 1101111:
-							UARTprintf("1");
+							UARTprintf("1\n");
 							break;
 						case 101111:
-							UARTprintf("2");
+							UARTprintf("2\n");
 							break;
 						case 1001111:
-							UARTprintf("3");
+							UARTprintf("3\n");
 							break;
 						case 1110111:
-							UARTprintf("4");
+							UARTprintf("4\n");
 							break;
-						case 11011:
-							UARTprintf("5");
+						case 110111:
+							UARTprintf("5\n");
 							break;
 						case 1010111:
-							UARTprintf("6");
+							UARTprintf("6\n");
 							break;
 						case 1100111:
-							UARTprintf("7");
+							UARTprintf("7\n");
 							break;
 						case 100111:
-							UARTprintf("8");
+							UARTprintf("8\n");
 							break;
 						case 1000111:
-							UARTprintf("9");
+							UARTprintf("9\n");
 							break;
 						case 111011:
-							UARTprintf("0");
+							UARTprintf("0\n");
+							break;
+						default:
+							UARTprintf("error, try again\n");
 							break;
 					}
 					arrayPos=0;
 					arrayVals=0;
-					//GPIOIntClear(GPIO_PORTB_BASE, GPIO_INT_PIN_5);//enabling it again breaks it!
-					//GPIOIntEnable(GPIO_PORTB_BASE, GPIO_INT_PIN_5);
+					iTick=0;
+					for(loopcount=0;loopcount<32;loopcount++){
+						arrayValues[loopcount]=0;
+					}
+					SysCtlDelay(SysCtlClockGet()/2);//1.5 second delay before enabling interrupt again
+					GPIOIntClear(GPIO_PORTB_BASE, GPIO_INT_PIN_5);//enabling it again breaks it!
+					GPIOIntEnable(GPIO_PORTB_BASE, GPIO_INT_PIN_5);
 				}
 			
    
