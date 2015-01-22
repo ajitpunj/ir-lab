@@ -186,7 +186,7 @@ int main(void)
 					for(loopcount=0;loopcount<32;loopcount++){
 						arrayValues[loopcount]=0;
 					}
-					SysCtlDelay(SysCtlClockGet()/2);//1.5 second delay before enabling interrupt again
+					SysCtlDelay(SysCtlClockGet()/3/10);//1.5 second delay before enabling interrupt again
 					GPIOIntClear(GPIO_PORTB_BASE, GPIO_INT_PIN_5);//enabling it again breaks it!
 					GPIOIntEnable(GPIO_PORTB_BASE, GPIO_INT_PIN_5);
 				}
