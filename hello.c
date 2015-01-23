@@ -145,8 +145,10 @@ int main(void)
 						
 					}
 					UARTprintf("remote val=%d\n",remoteVal);
+                    //remoteVal is a 8 bit number represented in decimal (so beginning 0's omitted)
+                    //which represents the last 8 bits of the pattern, minus the final bit (so bits 23:30)
 					switch(remoteVal){
-						case 1101111:
+						case 1101111: //0000 1101 1111 last 12 bits of "1", so this takes 01101111 (first 0 omitted)
 							UARTprintf("1\n");
 							break;
 						case 101111:
@@ -175,6 +177,21 @@ int main(void)
 							break;
 						case 111011:
 							UARTprintf("0\n");
+							break;
+                        case 111100://0 0 1 1 1  1 0 0 1
+							UARTprintf("Down\n");
+							break;
+                        case 1111100:
+							UARTprintf("Up\n");
+							break;
+                        case 101100:
+							UARTprintf("Left\n");
+							break;
+                        case 1011100:
+							UARTprintf("Right\n");
+							break;
+                        case 111:
+							UARTprintf("Mute\n");
 							break;
 						default:
 							UARTprintf("error, try again\n");
