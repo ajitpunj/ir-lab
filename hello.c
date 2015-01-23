@@ -130,13 +130,13 @@ int main(void)
 					GPIOIntDisable(GPIO_PORTB_BASE, GPIO_INT_PIN_5);
 					int loopcount;
 					for(loopcount=0;loopcount<32;loopcount++){
-							UARTprintf("value %d = %d\n",loopcount,arrayValues[loopcount]);
+							//UARTprintf("value %d = %d\n",loopcount,arrayValues[loopcount]);
 							int tempbitval=arrayValues[loopcount];
 							if(tempbitval>178000 && tempbitval<180000)
 									arrayValues[loopcount]=1;
 							else if(tempbitval>87000 && tempbitval<89000)
 									arrayValues[loopcount]=0;
-							UARTprintf("binary value %d = %d\n",loopcount,arrayValues[loopcount]);
+							//UARTprintf("binary value %d = %d\n",loopcount,arrayValues[loopcount]);
 					}
 					int remoteVal=0;
 					for(loopcount=24;loopcount<32;loopcount++){
@@ -200,10 +200,10 @@ int main(void)
 					arrayPos=0;
 					arrayVals=0;
 					iTick=0;
-					for(loopcount=0;loopcount<32;loopcount++){
+					/*for(loopcount=0;loopcount<32;loopcount++){
 						arrayValues[loopcount]=0;
-					}
-					SysCtlDelay(SysCtlClockGet()/3/10);//1.5 second delay before enabling interrupt again
+					}*/
+					SysCtlDelay(SysCtlClockGet()/3/3);//1.5 second delay before enabling interrupt again
 					GPIOIntClear(GPIO_PORTB_BASE, GPIO_INT_PIN_5);//enabling it again breaks it!
 					GPIOIntEnable(GPIO_PORTB_BASE, GPIO_INT_PIN_5);
 				}
